@@ -29,10 +29,9 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2att/proprietary/bin/usbhub:system/bin/usbhub \
         vendor/samsung/d2att/proprietary/bin/usbhub_init:system/bin/usbhub_init \
         vendor/samsung/d2att/proprietary/bin/thermald:system/bin/thermald \
-        vendor/samsung/d2att/proprietary/etc/thermald.conf:system/etc/thermald.conf \
-        vendor/samsung/d2att/proprietary/etc/thermald.conf_F:system/etc/thermald.conf_F \
-        vendor/samsung/d2att/proprietary/etc/thermald.conf_N:system/etc/thermald.conf_N \
-        vendor/samsung/d2att/proprietary/etc/thermald.conf_S:system/etc/thermald.conf_S \
+        vendor/samsung/d2att/proprietary/etc/thermald-8064.conf:system/etc/thermald-8064.conf \
+        vendor/samsung/d2att/proprietary/etc/thermald-8930.conf:system/etc/thermald-8930.conf \
+        vendor/samsung/d2att/proprietary/etc/thermald-8960.conf:system/etc/thermald-8960.conf \
         vendor/samsung/d2att/proprietary/bin/bcm4334.hcd:system/bin/bcm4334.hcd \
         vendor/samsung/d2att/proprietary/bin/bcm4334_murata.hcd:system/bin/bcm4334_murata.hcd \
         vendor/samsung/d2att/proprietary/bin/bcm4334_semco.hcd:system/bin/bcm4334_semco.hcd \
@@ -41,9 +40,10 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2att/proprietary/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
         vendor/samsung/d2att/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
         vendor/samsung/d2att/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
-        vendor/samsung/d2att/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
+        vendor/samsung/d2att/proprietary/lib/libdivxdrm.so:system/lib/libdivxdrm.so \
         vendor/samsung/d2att/proprietary/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
         vendor/samsung/d2att/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
+        vendor/samsung/d2att/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
         vendor/samsung/d2att/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
         vendor/samsung/d2att/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
         vendor/samsung/d2att/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
@@ -56,8 +56,8 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2att/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
         vendor/samsung/d2att/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
         vendor/samsung/d2att/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
-        vendor/samsung/d2att/proprietary/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
-        vendor/samsung/d2att/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
+        vendor/samsung/d2att/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
+        vendor/samsung/d2att/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
         vendor/samsung/d2att/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
         vendor/samsung/d2att/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
         vendor/samsung/d2att/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
@@ -105,7 +105,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2att/proprietary/bin/orientationd:system/bin/orientationd \
         vendor/samsung/d2att/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
         vendor/samsung/d2att/proprietary/lib/libakmd.so:system/lib/libakmd.so \
-        vendor/samsung/d2att/proprietary/lib/libAKM.so:system/lib/libAKM.so \
         vendor/samsung/d2att/proprietary/lib/libinvensense_hal.so:system/lib/libinvensense_hal.so \
         vendor/samsung/d2att/proprietary/lib/libmllite.so:system/lib/libmllite.so \
         vendor/samsung/d2att/proprietary/lib/libmlplatform.so:system/lib/libmlplatform.so \
@@ -120,7 +119,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2att/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
         vendor/samsung/d2att/proprietary/lib/libgemini.so:system/lib/libgemini.so \
         vendor/samsung/d2att/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
-        vendor/samsung/d2att/proprietary/lib/libsensor1.so:system/lib/libsensor1.so \
         vendor/samsung/d2att/proprietary/lib/libmmmpod.so:system/lib/libmmmpod.so \
         vendor/samsung/d2att/proprietary/lib/libmmstereo.so:system/lib/libmmstereo.so \
         vendor/samsung/d2att/proprietary/lib/libmmcamera_faceproc.so:system/lib/libmmcamera_faceproc.so \
@@ -145,19 +143,14 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2att/proprietary/lib/libdiag.so:system/lib/libdiag.so \
         vendor/samsung/d2att/proprietary/bin/macloader:system/bin/macloader \
         vendor/samsung/d2att/proprietary/bin/brcm_poke_helper:system/bin/brcm_poke_helper \
-        vendor/samsung/d2att/proprietary/etc/wifi/bcmdhd_apsta.bin_b1:system/etc/wifi/bcmdhd_apsta.bin_b1 \
         vendor/samsung/d2att/proprietary/etc/wifi/bcmdhd_apsta.bin_b2:system/etc/wifi/bcmdhd_apsta.bin_b2 \
-        vendor/samsung/d2att/proprietary/etc/wifi/bcmdhd_p2p.bin_b1:system/etc/wifi/bcmdhd_p2p.bin_b1 \
         vendor/samsung/d2att/proprietary/etc/wifi/bcmdhd_p2p.bin_b2:system/etc/wifi/bcmdhd_p2p.bin_b2 \
-        vendor/samsung/d2att/proprietary/etc/wifi/bcmdhd_sta.bin_b1:system/etc/wifi/bcmdhd_sta.bin_b1 \
         vendor/samsung/d2att/proprietary/etc/wifi/bcmdhd_sta.bin_b2:system/etc/wifi/bcmdhd_sta.bin_b2 \
-        vendor/samsung/d2att/proprietary/etc/wifi/bcmdhd_mfg.bin_b1:system/etc/wifi/bcmdhd_mfg.bin_b1 \
         vendor/samsung/d2att/proprietary/etc/wifi/bcmdhd_mfg.bin_b2:system/etc/wifi/bcmdhd_mfg.bin_b2 \
         vendor/samsung/d2att/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
         vendor/samsung/d2att/proprietary/etc/wifi/nvram_mfg.txt_murata:system/etc/wifi/nvram_mfg.txt_murata \
         vendor/samsung/d2att/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
         vendor/samsung/d2att/proprietary/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
         vendor/samsung/d2att/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-        vendor/samsung/d2att/proprietary/etc/firmware/cyttsp_8960_cdp.hex:system/etc/firmware/cyttsp_8960_cdp.hex \
         vendor/samsung/d2att/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
         vendor/samsung/d2att/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so
