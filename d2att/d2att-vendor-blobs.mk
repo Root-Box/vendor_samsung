@@ -52,6 +52,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2att/proprietary/lib/libgsl.so:system/lib/libgsl.so \
         vendor/samsung/d2att/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
         vendor/samsung/d2att/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
+        vendor/samsung/d2att/proprietary/lib/libOpenCL.so:system/lib/libOpenCL.so \
         vendor/samsung/d2att/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
         vendor/samsung/d2att/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
         vendor/samsung/d2att/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
@@ -60,6 +61,8 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2att/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
         vendor/samsung/d2att/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
         vendor/samsung/d2att/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
+        vendor/samsung/d2att/proprietary/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
+        vendor/samsung/d2att/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
         vendor/samsung/d2att/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
         vendor/samsung/d2att/proprietary/bin/netmgrd:system/bin/netmgrd \
         vendor/samsung/d2att/proprietary/bin/sec-ril:system/bin/sec-ril \
