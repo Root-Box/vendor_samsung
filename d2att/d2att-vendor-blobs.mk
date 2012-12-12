@@ -74,7 +74,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2att/proprietary/bin/qmuxd:system/bin/qmuxd \
         vendor/samsung/d2att/proprietary/bin/rmt_storage:system/bin/rmt_storage \
         vendor/samsung/d2att/proprietary/bin/rild:system/bin/rild \
-        vendor/samsung/d2att/proprietary/bin/wdsdaemon:system/bin/wdsdaemon \
         vendor/samsung/d2att/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
         vendor/samsung/d2att/proprietary/lib/libqmi.so:system/lib/libqmi.so \
         vendor/samsung/d2att/proprietary/lib/libqdi.so:system/lib/libqdi.so \
@@ -93,6 +92,8 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2att/proprietary/lib/libqmi_common_so.so:system/lib/libqmi_common_so.so \
         vendor/samsung/d2att/proprietary/lib/libqmi_encdec.so:system/lib/libqmi_encdec.so \
         vendor/samsung/d2att/proprietary/lib/libatparser.so:system/lib/libatparser.so \
+        vendor/samsung/d2att/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
+        vendor/samsung/d2att/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
         vendor/samsung/d2att/proprietary/bin/wiperiface_v02:system/bin/wiperiface_v02 \
         vendor/samsung/d2att/proprietary/bin/quipc_igsn:system/bin/quipc_igsn \
         vendor/samsung/d2att/proprietary/bin/quipc_main:system/bin/quipc_main \
@@ -108,8 +109,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2att/proprietary/lib/libwifiscanner.so:system/lib/libwifiscanner.so \
         vendor/samsung/d2att/proprietary/lib/hw/nfc.MSM8960.so:system/lib/hw/nfc.MSM8960.so \
         vendor/samsung/d2att/proprietary/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
-        vendor/samsung/d2att/proprietary/bin/geomagneticd:system/bin/geomagneticd \
-        vendor/samsung/d2att/proprietary/bin/orientationd:system/bin/orientationd \
         vendor/samsung/d2att/proprietary/lib/hw/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so \
         vendor/samsung/d2att/proprietary/lib/libakmd.so:system/lib/libakmd.so \
         vendor/samsung/d2att/proprietary/lib/libinvensense_hal.so:system/lib/libinvensense_hal.so \
@@ -149,7 +148,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2att/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
         vendor/samsung/d2att/proprietary/lib/libdiag.so:system/lib/libdiag.so \
         vendor/samsung/d2att/proprietary/bin/macloader:system/bin/macloader \
-        vendor/samsung/d2att/proprietary/bin/brcm_poke_helper:system/bin/brcm_poke_helper \
         vendor/samsung/d2att/proprietary/etc/wifi/bcmdhd_apsta.bin_b2:system/etc/wifi/bcmdhd_apsta.bin_b2 \
         vendor/samsung/d2att/proprietary/etc/wifi/bcmdhd_p2p.bin_b2:system/etc/wifi/bcmdhd_p2p.bin_b2 \
         vendor/samsung/d2att/proprietary/etc/wifi/bcmdhd_sta.bin_b2:system/etc/wifi/bcmdhd_sta.bin_b2 \
